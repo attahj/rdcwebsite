@@ -40,7 +40,7 @@ nav.sc{box-shadow:0 2px 20px rgba(27,67,50,.08);}
 .fl{display:block;font-size:11.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:7px;}
 .fi{width:100%;padding:11px 15px;border:1.5px solid var(--bdr);border-radius:6px;font-family:"Plus Jakarta Sans",sans-serif;font-size:14px;background:#fff;color:var(--ink);transition:border-color 0.2s,box-shadow 0.2s;}
 .fi:focus{outline:none;border-color:var(--forest-light);box-shadow:0 0 0 3px rgba(64,145,108,.1);}
-input[type=range]{-webkit-appearance:none;width:100%;height:3px;border-radius:2px;background:rgba(255,255,255,.2);outline:none;}
+input[type=range]{-webkit-appearance:none;width:100%;height:3px;border-radius:2px;background:var(--bdr);outline:none;}
 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:#fff;cursor:pointer;border:3px solid var(--gold);box-shadow:0 2px 6px rgba(0,0,0,.2);}
 .sp{border:1.5px solid var(--bdr);border-radius:100px;padding:9px 18px;font-size:13.5px;cursor:pointer;transition:all 0.18s;background:#fff;font-family:"Plus Jakarta Sans",sans-serif;font-weight:500;color:var(--muted);}
 .sp:hover{border-color:var(--forest-light);color:var(--forest);background:rgba(64,145,108,.04);}
@@ -66,7 +66,9 @@ nav{padding:0 20px;}
 .tc{grid-template-columns:1fr!important;}
 .twc{grid-template-columns:1fr!important;gap:40px!important;}
 .sd{grid-template-columns:1fr!important;}
-.hero-pad{padding-top:80px!important;}
+.hero-pad{padding-top:80px!important;padding-left:20px!important;padding-right:20px!important;}
+.hero-pad h1{font-size:28px!important;}
+.hero-pad p{font-size:15px!important;}
 }
 </style>
 </head>
@@ -84,22 +86,22 @@ nav{padding:0 20px;}
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-pad" style="background:linear-gradient(135deg, var(--forest) 0%, #0a3428 100%);min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;position:relative;overflow:hidden;">
+<section class="hero-pad" style="background:linear-gradient(135deg, var(--forest) 0%, #0a3428 100%);min-height:92vh;display:flex;align-items:center;padding:120px 40px 80px;position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 65% 75% at 85% 40%,rgba(116,198,157,.18) 0%,transparent 65%),radial-gradient(ellipse 40% 50% at 15% 85%,rgba(184,149,58,.1) 0%,transparent 55%);pointer-events:none;"></div>
-  <div style="position:absolute;right:-60px;top:-40px;width:420px;height:420px;opacity:.04;pointer-events:none;">
-    <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="2"/></svg>
-  </div>
   <div class="cnt" style="position:relative;z-index:1;">
-    <div style="max-width:720px;">
-      <div class="lbl" style="margin-bottom:16px;">Long Island Bill Negotiation</div>
-      <div style="display:inline-block;background:rgba(184,149,58,.15);border:1px solid rgba(184,149,58,.35);border-radius:100px;padding:6px 14px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--gold-l);margin-bottom:20px;">Featured on New York's Business Podcast</div>
-      <h1 style="font-size:clamp(32px,5vw,56px);color:#fff;margin-bottom:24px;line-height:1.15;">Stop overpaying on your bills. We negotiate lower rates — you only pay if we save you.</h1>
-      <p style="font-size:17px;color:rgba(255,255,255,.8);margin-bottom:36px;max-width:560px;line-height:1.75;">0% fee if we can't save you money. We handle the calls, paperwork, and negotiations with your providers. First year savings are split 50/50 — you keep half, we keep half.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:14px;">
+    <div style="max-width:700px;">
+      <p class="lbl" style="color:var(--gold);margin-bottom:12px;">Long Island Bill Negotiation</p>
+      <p class="lbl" style="color:var(--gold-l);margin-bottom:8px;">Featured on New York's Business Podcast</p>
+      <h1 style="font-size:clamp(32px,5vw,64px);color:#fff;margin-bottom:20px;line-height:1.15;">Stop overpaying on your bills. We negotiate lower rates — you only pay if we save.</h1>
+      <p style="font-size:18px;color:rgba(255,255,255,.85);margin-bottom:40px;line-height:1.6;max-width:600px;">0% fee if we can't save you money. We handle the calls, paperwork, and negotiations with your providers. First year savings are split 50/50 — you keep half, we keep half.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;">
         <a href="#contact" class="btn btn-g">Start Free Audit</a>
         <a href="#about" class="btn btn-ow">How It Works</a>
       </div>
     </div>
+  </div>
+  <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);animation:bounce 2s infinite;">
+    <i class="fas fa-chevron-down" style="color:rgba(255,255,255,.5);font-size:24px;"></i>
   </div>
 </section>
 
