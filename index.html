@@ -86,22 +86,46 @@ nav{padding:0 20px;}
 </nav>
 
 <!-- Hero Section -->
-<section class="hero-pad" style="background:linear-gradient(135deg, var(--forest) 0%, #0a3428 100%);min-height:92vh;display:flex;align-items:center;padding:120px 40px 80px;position:relative;overflow:hidden;">
+<section style="background:var(--forest);min-height:92vh;display:flex;align-items:center;padding:120px 40px 80px;position:relative;overflow:hidden;">
   <div style="position:absolute;inset:0;background:radial-gradient(ellipse 65% 75% at 85% 40%,rgba(116,198,157,.18) 0%,transparent 65%),radial-gradient(ellipse 40% 50% at 15% 85%,rgba(184,149,58,.1) 0%,transparent 55%);pointer-events:none;"></div>
+  <div style="position:absolute;right:-60px;top:-40px;width:420px;height:420px;opacity:.04;pointer-events:none;">
+    <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="60" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="40" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+  </div>
   <div class="cnt" style="position:relative;z-index:1;">
     <div style="max-width:700px;">
-      <p class="lbl" style="color:var(--gold);margin-bottom:12px;">Long Island Bill Negotiation</p>
-      <p class="lbl" style="color:var(--gold-l);margin-bottom:8px;">Featured on New York's Business Podcast</p>
-      <h1 style="font-size:clamp(32px,5vw,64px);color:#fff;margin-bottom:20px;line-height:1.15;">Stop overpaying on your bills. We negotiate lower rates — you only pay if we save.</h1>
-      <p style="font-size:18px;color:rgba(255,255,255,.85);margin-bottom:40px;line-height:1.6;max-width:600px;">0% fee if we can't save you money. We handle the calls, paperwork, and negotiations with your providers. First year savings are split 50/50 — you keep half, we keep half.</p>
-      <div style="display:flex;gap:16px;flex-wrap:wrap;">
-        <a href="#contact" class="btn btn-g">Start Free Audit</a>
-        <a href="#about" class="btn btn-ow">How It Works</a>
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);border-radius:100px;padding:7px 16px 7px 10px;margin-bottom:32px;">
+        <span style="background:var(--gold);color:#fff;font-size:10px;font-weight:800;letter-spacing:.08em;padding:4px 8px;border-radius:100px;">FEATURED</span>
+        <span style="font-size:13px;color:rgba(255,255,255,.75);font-weight:500;">New York's Business Podcast</span>
+      </div>
+      <h1 style="color:#fff;font-size:clamp(42px,6.5vw,76px);font-weight:900;margin-bottom:22px;">
+        Where savings<br><span style="color:var(--gold-l);font-style:italic;">take root.</span>
+      </h1>
+      <p style="color:rgba(255,255,255,.68);font-size:17px;line-height:1.75;max-width:500px;margin-bottom:14px;">
+        Ajmal Ismail personally negotiates your bills &mdash; internet, insurance, mortgages, debt, and more. Long Island families save an average of <strong style="color:rgba(255,255,255,.9);">$1,000+ per year.</strong>
+      </p>
+      <p style="display:inline-flex;align-items:center;gap:8px;color:var(--sage);font-size:13.5px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;margin-bottom:40px;">
+        <span style="width:20px;height:1px;background:var(--sage);display:inline-block;"></span>
+        50/50 Success Split &mdash; you only pay when we save you money
+      </p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="#contact" class="btn btn-g">Start My Free Audit</a>
+        <a href="#estimator" class="btn btn-ow">See My Savings &rarr;</a>
+      </div>
+      <div style="display:flex;gap:0;margin-top:60px;padding-top:32px;border-top:1px solid rgba(255,255,255,.1);">
+        <div style="padding-right:32px;border-right:1px solid rgba(255,255,255,.1);">
+          <div style="font-family:Fraunces,serif;font-size:30px;font-weight:700;color:#fff;">$1,000+</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:3px;text-transform:uppercase;letter-spacing:.06em;">Avg. annual savings</div>
+        </div>
+        <div style="padding:0 32px;border-right:1px solid rgba(255,255,255,.1);">
+          <div style="font-family:Fraunces,serif;font-size:30px;font-weight:700;color:#fff;">48 hrs</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:3px;text-transform:uppercase;letter-spacing:.06em;">Response guarantee</div>
+        </div>
+        <div style="padding-left:32px;">
+          <div style="font-family:Fraunces,serif;font-size:30px;font-weight:700;color:#fff;">Zero</div>
+          <div style="font-size:12px;color:rgba(255,255,255,.45);margin-top:3px;text-transform:uppercase;letter-spacing:.06em;">Risk to you</div>
+        </div>
       </div>
     </div>
-  </div>
-  <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);animation:bounce 2s infinite;">
-    <i class="fas fa-chevron-down" style="color:rgba(255,255,255,.5);font-size:24px;"></i>
   </div>
 </section>
 
